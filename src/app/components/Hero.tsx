@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center text-white">
-      <div className=" bg-primary h-[80vh] w-full text-center">
+      <div className=" bg-primary  h-[50vh] sm:h-[55vh]  md:h-[80vh] w-full text-center">
         <h1 className="text-4xl md:text-5xl font-bold my-8">
           Effectively Handle Your Projects
         </h1>
