@@ -7,18 +7,13 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <div className="flex items-start gap-4">
-      <div className="flex-1">
+    <div className="flex flex-col gap-2 container mx-auto">
+      <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
-        <p className="text-gray-600 text-sm">{feature.description}</p>
+        <Image src={feature.icon} alt={feature.title} width={32} height={32} />
       </div>
-      <Image
-        src={feature.icon}
-        alt={feature.title}
-        width={40}
-        height={40}
-        className="mt-1"
-      />
+
+      <p className="text-gray-600 text-sm">{feature.description}</p>
     </div>
   );
 }

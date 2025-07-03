@@ -6,7 +6,6 @@ const PowerfulSection: FC = () => (
   <section className="bg-indigo-50 py-16 md:py-20 lg:py-24 overflow-visible">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12 lg:gap-16">
-        {/* LEFT: heading, text, CTA, arrow */}
         <div className="relative mx-auto md:mx-0 space-y-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
           <h2
             className="
@@ -40,8 +39,8 @@ const PowerfulSection: FC = () => (
             <Image
               src="/assets/arrow-scribble.svg"
               alt=""
-              width={200}
-              height={100}
+              width={400}
+              height={300}
               className="w-32 md:w-40 lg:w-48 h-auto"
             />
           </div>

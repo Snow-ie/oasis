@@ -16,12 +16,10 @@ export default function Header() {
 
   return (
     <>
-      {/* ==== TOP BAR ==== */}
       <header className="w-full bg-primary text-white">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Logo />
 
-          {/* desktop nav */}
           <nav className="hidden md:flex gap-8 text-sm font-medium">
             {navItems.map((item) => (
               <a
@@ -35,7 +33,7 @@ export default function Header() {
           </nav>
 
           <Link
-            href="/auth"
+            href="/auth/sign-up"
             className="hidden md:inline-block bg-white text-primary font-semibold px-4 py-2 rounded-md hover:bg-gray-100 transition"
           >
             Get started
@@ -53,7 +51,6 @@ export default function Header() {
 
       {open && (
         <div className="fixed inset-0 z-50 md:hidden">
-          {/* backdrop */}
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setOpen(false)}
@@ -80,7 +77,7 @@ export default function Header() {
             ))}
 
             <Link
-              href="/auth"
+              href="/auth/sign-up"
               className="mt-4 inline-block bg-white text-primary font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition"
               onClick={() => setOpen(false)}
             >

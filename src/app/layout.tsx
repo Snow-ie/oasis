@@ -1,7 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Oasis Task Manager",
@@ -17,11 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col antialiased text-gray-900 bg-white">
-        <Header />
-
-        <main className="flex-grow">{children}</main>
-
-        <Footer />
+        {children}
       </body>
     </html>
   );
